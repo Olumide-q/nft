@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.7rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.box{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.text:hover{
+    color: hsl(178, 100%, 50%);
+}
+.pref {
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bottom-a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+.bottom-a h2 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.bottom-a span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-b{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.5rem;
+   
+}
+.bottom-b p {
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+hr {
+  border: 1px solid  hsl(215, 32%, 27%);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+}
+.profile h3{
+    color: white;
+    font-weight: 300;
+}
+.text-1:hover{
+    color:  hsl(178, 100%, 50%);
+}
+span{
+    color: hsl(215, 51%, 70%);
+}
+.bottom-b span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (width > 768px) {
+    .container{
+        margin: 100px auto;
+        width: 30%;
+    }
+    .bottom{
+        grid-template-rows:1fr 1fr ;
+    }
+
+}
